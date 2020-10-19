@@ -1,0 +1,32 @@
+.home-container header {
+    width: 100%;
+    height: 70px;
+    background: var(--main-color);
+
+    display: flex;
+    align-items: center;
+}
+
+.home-container header nav {
+    width: 100%;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.home-container header nav a{
+    text-decoration: none;
+}
+
+.home-container header nav li {
+    font-size: 1.4rem;
+    color: var(--white-color);
+
+    transition: 0.1s;
+}
+
+.home-container header nav li:hover {
+    border-bottom: 2px solid var(--white-color);
+}

@@ -1,0 +1,22 @@
+.home-container main {
+    margin-top: 20px;
+
+    width: 95%;
+    height: 85vh;
+    background: var(--white-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.home-container main h1 {
+    color: var(--sub-color);
+    font-size: 3rem;
+    width: 450px;
+
+    line-height: 6rem;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 60px;
+}
