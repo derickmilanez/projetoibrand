@@ -8,12 +8,12 @@
 
 }
 .about-container img {
-    width: 100px;
+    width: 80px;
     margin-top: 70px;
 }
 
 .about-container h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 1rem;
     color: var(--sub-color);
 }

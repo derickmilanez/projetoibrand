@@ -1,0 +1,84 @@
+.tool-container{
+    width: 95vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tool-container > img {
+    width: 80px;
+}
+
+.tool-container h2 {
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    color: var(--sub-color);
+}
+
+.tool-container  > p {
+    color: var(--white-color);
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+
+.tool-container #steps-container{
+    width: 100%;
+    height: 80%;
+
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 7rem;
+}
+
+.tool-container #steps-container .step{
+    width: 300px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tool-container #steps-container .step > img {
+    width: 60px;
+}
+
+.tool-container #steps-container .step p {
+    color: var(--white-color);
+    font-size: 1.2rem;
+    margin-top: 1rem;
+}
+
+.tool-container #steps-container .step.lastone {
+    height: 300px;
+}
+
+.tool-container #steps-container .step.lastone img {
+    width: 60px;
+}
+
+.tool-container #steps-container .step.lastone #markers{
+    width: 100%;
+    height: 100%;
+}
+
+.tool-container #steps-container .step.lastone #markers ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tool-container #steps-container .step.lastone #markers ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tool-container #steps-container .step.lastone #markers ul li img {
+    width: 30px;
+    margin-top: 1rem;
+}
