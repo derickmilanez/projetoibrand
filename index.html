@@ -16,13 +16,13 @@
     <title>IBRAND</title>
 </head>
 <body>
-    <div class="home-container">
+    <div class="home-container" id="home-container">
         <header>
             <nav>
-                <a href=""><li>Home</li></a>
-                <a href=""><li>Sobre nós</li></a>
-                <a href=""><li>Ferramenta</li></a>
-                <a href=""><li>Fale conosco</li></a>
+                <a onclick="scrollHome()"><li>Home</li></a>
+                <a onclick="scrollAbout()"><li>Sobre nós</li></a>
+                <a onclick="scrollTools()"><li>Ferramenta</li></a>
+                <a onclick="scrollContact()"><li>Fale conosco</li></a>
             </nav>
         </header>
         <main>
@@ -30,54 +30,56 @@
             <h1>Sinta-se mais seguro onde quer que você vá</h1>
         </main>
     </div>
-    <div class="about-container">
+    <div class="about-container" id="about-container">
         <img src="./assets/building.svg" alt="Sobre nós" />
         <h2>Sobre nós</h2>
         <div id="info">
             <div class="card">
                 <h3>Missão</h3>
-                <p>text about the title in this card ajsssdasdas</p>
+                <p>A nossa missão, vulgo razão de existir, é proporcionar segurança para as pessoas de bem por meio da tecnologia de forma ágil e eficaz.</p>
             </div>
             <div class="card">
                 <h3>Visão</h3>
-                <p>text about the title in this card ajsssdasdas</p>
+                <p>Nós esperamos no futuro não só tornar a cidade de São Paulo mais segura, bem como todo país através do uso de nosso serviço.</p>
             </div>
             <div class="card">
                 <h3>Valores</h3>
-                <p>text about the title in this card ajsssdasdas</p>
+                <p>Prezamos pela satisfação de nossos clientes fazendo o máximo para entregar um produto de fácil acesso e de utilização, e esperamos que isso vos ajude a tornar São Paulo uma cidade mais segura.</p>
             </div>
         </div>
     </div>
-    <div class="tool-container">
+    <div class="tool-container" id="tool-container">
         <img src="./assets/map.svg" alt="Ferramenta" />
-        <h2>Ferramenta</h3>
-        <p>ahsdahsdahsdhashdahsdauhsfiouhadsufhguadhgfaudhfuahdfuahfu<br />
-            aosdasijfiasjdfijasdjkfaisjfdpaisjdfadfahnjdfahjdfajdfjaijd
+        <h2>Nossa Ferramenta</h3>
+        <p>Esse sistema foi projetado para usuários fazerem ocorrências de crimes pela cidade de São Paulo.<br>
+           Os dados coletados são passados para a Policia para que assim seja possível visualizar áreas perigosas da cidade e então reforçar o policiamento.<br>
+           Sinta-se livre para descrever os acontecimentos e se possível as características dos criminosos, não se preocupe pois sua identidade aqui será preservada.<br>
+           Aqui vai um pequeno tutorial de como utilizar a ferramenta:
         </p>
         <div id="steps-container">
             <div class="step">
                 <img src="./assets/one.svg" alt="One" />
-                <p>Step one of the process</p>
+                <p>Utilize a barra de pesquisa para inserir o endereço da ocorrência.</p>
             </div>
             <div class="step">
                 <img src="./assets/two.svg" alt="Two" />
-                <p>Step two of the process</p>
+                <p>A seguir clique no pino e insira dados informando o tipo de ocorrência e a descrição do ocorrido.</p>
             </div>
             <div class="step lastone">
                 <img src="./assets/three.svg" alt="Three" />
-                <p>Step three of the process</p>
+                <p>Após preencher os dados, a ocorrência será enviada para análise e se for validada aparecerá um pino indicando o tipo de ocorrência atráves de cores:</p>
                 <div id="markers">
                     <ul>
                         <li>
-                            <p>Grave</p>
+                            <p>Violência Sexual</p>
                             <img src="./assets/marker3.svg" alt="Marker"/>
                         </li>
                         <li>
-                            <p>Moderado</p>
+                            <p>Roubo</p>
                             <img src="./assets/marker-2.svg" alt="Maker"/>
                         </li>
                         <li>
-                            <p>Leve</p>
+                            <p>Furto</p>
                             <img src="./assets/marker1.svg" alt="Marker"/>
                         </li>
                     </ul>
@@ -85,8 +87,10 @@
             </div>
         </div>
     </div>
-    <div class="map-container">
-
+    <div class="map-container" id="map-container">
+        <a href="user-map.php">
+        <img class="map" src="./assets/Map.png" alt="Mapa" title="Acesse nosso sistema"/>
+        </a>
     </div>
     <footer>
         <ul>
@@ -104,5 +108,23 @@
             </li>
         </ul>
     </footer>
+
+    <script>
+        function scrollHome(){
+            document.getElementById('home-container').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollAbout(){
+            document.getElementById('about-container').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollTools(){
+            document.getElementById('tool-container').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function scrollContact(){
+            document.getElementById('map-container').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
